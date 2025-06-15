@@ -1,0 +1,25 @@
+ext {
+    sdk = [
+            snapshot_url   : "https://s01.oss.sonatype.org/content/repositories/snapshots/",
+            release_url    : "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/",
+
+            group          : "io.github.cangHW",
+            gitUrl         : "https://github.com/cangHW/FunSDK.git",
+            siteUrl        : "https://github.com/cangHW/FunSDK",
+            licenseName    : "The Apache Software License, Version 2.0",
+            licenseUrl     : "http://www.apache.org/licenses/LICENSE-2.0.txt",
+            developerId    : "cangHX",
+            developerName  : "cangHX",
+            developerEmail : "cwqcanghaixiao@163.com",
+
+            // Demo View
+            TestView  : [
+                    artifact          : "Test-DemoView",
+                    version           : "0.0.1",
+                    source            : true,
+                    libraryName       : "Android cloud sdk",
+                    libraryDescription: "The perfect framework for Android"
+            ],
+    ]
+}
+
