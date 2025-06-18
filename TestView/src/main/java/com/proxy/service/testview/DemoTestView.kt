@@ -55,9 +55,12 @@ class DemoTestView : FrameLayout {
         adapter = ListAdapter()
         recyclerView.adapter = adapter
         addView(view)
+
+        val fileName = context.javaClass.name.replace(".", "_")
+        setSaveFileName(fileName)
     }
 
-    fun setSaveFileName(fileName: String) {
+    private fun setSaveFileName(fileName: String) {
         val file = File(context.getExternalFilesDir(null), "$DIR${File.separator}$fileName")
         val content = CsFileReadUtils.setSourceFile(file).readString()
         val temp = CsJsonUtils.fromJson(content, Temp::class.java)

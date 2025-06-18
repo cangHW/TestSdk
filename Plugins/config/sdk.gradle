@@ -15,7 +15,7 @@ ext {
             // Demo View
             TestView  : [
                     artifact          : "Test-DemoView",
-                    version           : "0.0.3",
+                    version           : "0.0.4",
                     source            : true,
                     libraryName       : "Android cloud sdk",
                     libraryDescription: "The perfect framework for Android"
