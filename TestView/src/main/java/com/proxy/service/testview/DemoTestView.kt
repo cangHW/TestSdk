@@ -68,7 +68,7 @@ class DemoTestView : FrameLayout {
     }
 
     fun addData(key: String, value: String?) {
-        val time = CsTimeManager.createFactory().get(TimeFormat.TYPE_Y_M_D_H_M_S_S)
+        val time = CsTimeManager.createFactory().get(TimeFormat.TYPE_Y_M_D_H_M_S_MS)
         post {
             adapter?.add(Data(time, key, value ?: ""))
         }
