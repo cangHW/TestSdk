@@ -37,8 +37,8 @@ dependencies {
     implementation(libs.android.kotlin)
 
     implementation("androidx.recyclerview:recyclerview:1.2.1")
-    implementation("io.github.cangHW:Service-CoreFramework:1.1.2")
-    implementation("io.github.cangHW:Service-Threadpool:0.2.2")
+    implementation("io.github.canghw:Service-CoreFramework:1.1.3")
+    implementation("io.github.canghw:Service-Threadpool:0.2.3")
 }
 
 apply(from = File(project.rootDir.absolutePath, "Plugins/script/maven_center.gradle").absolutePath)
